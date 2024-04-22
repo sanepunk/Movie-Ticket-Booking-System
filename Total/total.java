@@ -32,29 +32,6 @@ public class total {
 
    
   }
-
-    /*   public static double summation() {
-        String filename = "C:\\vscode\\movie-ticket-booking\\History.txt"; // Change this to your file's name
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String[] parts = line.split("\\s+"); // Split the line by whitespace
-                if (parts.length >= 3) {
-                    try {
-                        double price = Double.parseDouble(parts[2]); // Parse the third column as double
-                        sum += price; // Add the price to the sum
-                    } catch (NumberFormatException e) {
-                        System.err.println("Invalid price format: " + parts[2]);
-                    }
-                }
-            }
-            System.out.println("Total sum: " + sum);
-        } catch (IOException e) {
-            System.err.println("Error reading file: " + e.getMessage());
-        }
-        return sum;
-    }*/
   public static void main(String[] args)
   {
     System.out.println(summation());
