@@ -7,7 +7,7 @@ public class Updation
 {
   public static void getter(String SS)
   {
-    String filename = "C:\\vscode\\movie-ticket-booking\\History.txt"; // Change this to your file's name
+    String filename = "movie-ticket-booking\\History.txt"; // Change this to your file's name
   
     try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) 
     {

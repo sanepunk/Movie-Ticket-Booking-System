@@ -6,10 +6,10 @@ import java.io.IOException;
 
 public class total {
   public static double sum = 0;
-  File file = new File("C:\\vscode\\movie-ticket-booking\\History.txt");
+  File file = new File("movie-ticket-booking\\History.txt");
   public static double summation()
   {
-    String filename = "C:\\vscode\\movie-ticket-booking\\History.txt"; // Change this to your file's name
+    String filename = "movie-ticket-booking\\History.txt"; // Change this to your file's name
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
