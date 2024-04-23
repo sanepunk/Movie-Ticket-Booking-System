@@ -221,7 +221,7 @@ public class Main
 
   public static void movie_reader()
   {
-    String filename = "C:\\vscode\\movie-ticket-booking\\Movies.txt"; // Change this to your file's name
+    String filename = "movie-ticket-booking\\Movies.txt"; // Change this to your file's name
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
@@ -235,7 +235,7 @@ public class Main
 
   public static void total_sales_records()
   {
-    String filename = "C:\\vscode\\movie-ticket-booking\\History.txt"; // Change this to your file's name
+    String filename = "movie-ticket-booking\\History.txt"; // Change this to your file's name
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
