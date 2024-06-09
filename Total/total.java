@@ -9,7 +9,7 @@ public class total {
   File file = new File("movie-ticket-booking\\History.txt");
   public static double summation()
   {
-    String filename = "movie-ticket-booking\\History.txt"; // Change this to your file's name
+    String filename = "movie-ticket-booking\\History.txt";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
@@ -24,7 +24,7 @@ public class total {
                     }
                 }
             }
-            //System.out.println("Total sum: " + sum);
+            // System.out.println("Total sum: " + sum);
         } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
         }

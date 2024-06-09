@@ -49,12 +49,12 @@ public class Main
     // Print the message
     System.out.print(message);
 
-    // Print spaces after the message
+    // Prints spaces after the message
     for (int i = 0; i < remainingSpaces / 2; i++) {
         System.out.print(" ");
     }
 
-    // Print stars
+    // Prints stars
     for (int i = 0; i < starsCount; i++) {
         System.out.print("*");
     }
@@ -221,7 +221,7 @@ public class Main
 
   public static void movie_reader()
   {
-    String filename = "movie-ticket-booking\\Movies.txt"; // Change this to your file's name
+    String filename = "Movies.txt";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
@@ -233,18 +233,16 @@ public class Main
         }
   }
 
-  public static void total_sales_records()
-  {
-    String filename = "movie-ticket-booking\\History.txt"; // Change this to your file's name
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (IOException e) {
-            System.err.println("Error reading file: " + e.getMessage());
+  public static void total_sales_records() {
+    String filename = "History.txt";
+    try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+        String line;
+        while ((line = reader.readLine()) != null) {
+            System.out.println(line);
         }
-  }
+    } catch (IOException e) {
+        System.err.println("Error reading file: " + e.getMessage());
+    }
+}
 
 }
