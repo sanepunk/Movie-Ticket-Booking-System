@@ -7,9 +7,9 @@ public class Updation
 {
   public static void getter(String SS)
   {
-    String filename = "movie-ticket-booking\\History.txt"; // Change this to your file's name
-  
-    try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true))) 
+    String file = "History.txt"; // Change this to your file's name
+
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) 
     {
               // Open the file for writing, with "true" parameter to enable append mode
       writer.write(SS); // Write a line of text
