@@ -7,15 +7,14 @@ public class Updation
 {
   public static void getter(String SS)
   {
-    String file = "History.txt"; // Change this to your file's name
+    String file = "History.txt";
 
     try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) 
     {
-              // Open the file for writing, with "true" parameter to enable append mode
-      writer.write(SS); // Write a line of text
-      writer.newLine(); // Move to the next line
-               // Move to the next line
-              // You can write more lines here as needed
+
+      writer.write(SS); // Writes a line of text
+      writer.newLine(); // Writes a new line
+
 
       System.out.println("History Updated Successfully.");
     } 
